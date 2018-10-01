@@ -1,19 +1,17 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
-echo <table style="width:100%">
+echo "<table>";
 
-function multiplicationtable($x,$y)
+for($x = 1; $x <= 100; $x++)
 {
-    for($i = 0; $i < 100; $i++ )
+    echo "<tr>";
+    for($y = 1; $y <= 100; $y++)
     {
-        echo <tr>
-        for($j = 0; $j < 100; $j++)
-        {
-            echo <td> $i * $j;
-        }
+        echo "<td>". $x * $y . "</td>";
     }
+    echo "</tr>";
 }
-
-multiplicationtable(100,100);
-
+echo "</table>";
 ?>
