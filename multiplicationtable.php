@@ -1,15 +1,19 @@
 <?php
 
+echo <table style="width:100%">
 
-
-function multiplicationtable()
+function multiplicationtable($x,$y)
 {
-    for($i = 1; $i <= 100; $i++)
+    for($i = 0; $i < 100; $i++ )
     {
-        echo "$i";
+        echo <tr>
+        for($j = 0; $j < 100; $j++)
+        {
+            echo <td> $i * $j;
+        }
     }
 }
 
-multiplicationtable(1,1);
+multiplicationtable(100,100);
 
 ?>
