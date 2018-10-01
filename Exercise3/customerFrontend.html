@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title>Webstore</title>
     <script src="formChecker.js"></script>
     <link rel="stylesheet" href="style.css">
+</head>
     <body>
         <h1>Sushi Webstore</h1>
         <h6>Disclaimer: May go bad in transit.</h6>
         <h2>Login:</h2>
-        <form action="customerBackend.php" onsubmit="return validate()" method="post">
+        <form id ="myform" action="customerBackend.php" onsubmit="return validate()" method="post">
             Username:<br>
             <input type="text" id= "us"name="Username">
             <br>
@@ -19,10 +21,11 @@
            California Roll<br> <input type="number" name= "item2" id="Item 2">@ $1.00 each<br>
            Salmon Roll <br><input type="number" name= "item3" id="Item 3">@ $3.00 each<br>
            <h3>Shipping</h3>
-           Free 7 Day <input type="radio" name= "sevenday" value="sevenday"><br>
-           $50.00 Overnight <input type="radio" name= "overnight" value="overnight"><br>
-           $5.00 Three day <input type="radio" name= "threeday" value="threeday"><br>
-           <input type="submit" value="Submit"> <button type="Reset">Reset</button>
+           Free 7 Day <input type="radio" name= "shipping" id="myradio" value="Seven Day"><br>
+           $50.00 Overnight <input type="radio" name= "shipping" id="myradio" value="Over Night"><br>
+           $5.00 Three day <input type="radio" name= "shipping" id="myradio" value="Three Day"><br>
+           <input type="submit" value="Submit">
+            <button type="Reset">Reset</button>
           </form>
     </body>
 <html>
